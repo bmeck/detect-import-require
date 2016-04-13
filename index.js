@@ -39,7 +39,8 @@ function findImportRequire (src, opts) {
     sourceType: 'module',
     allowReserved: true,
     allowReturnOutsideFunction: true,
-    allowHashBang: true
+    allowHashBang: true,
+    locations: Boolean(opts.locations)
   })
 
   var importDeclaration, callExpression
